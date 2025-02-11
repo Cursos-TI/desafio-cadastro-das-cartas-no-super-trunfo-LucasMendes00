@@ -1,55 +1,52 @@
 #include <stdio.h>
 
 int main() {
-    char estado;
-    char codigodaCarta [20];
-    char nomedaCidade [20];
     int populacao;
+    int numerodepontoturistico;
     float area;
-    float densidadePopulacional;
     float pib;
-    float pibPerCapita;
-    int numerodePontoTuristico;
+    float densidadepopulacional;
+    float pibpercapita;
 
-    printf("Digite o estado:");
-    scanf("%s", &estado);
-
-    printf("Digite o código da carta:");
-    scanf("%d", &codigodaCarta);
-
-    printf("Digite o nome da cidade:");
-    scanf("%s", nomedaCidade);
-
-    printf("Digite a população:");
+    printf("Digite a população: \n");
     scanf("%d", &populacao);
 
-    int a = populacao;
-    float b = area;
-    float resultado = a / b;
+    printf("Digite o número de ponto turístico: \n");
+    scanf("%d", &numerodepontoturistico);
 
-    printf("Resultado: %.3f\n", resultado);
-
-    printf("Digite a área:");
+    printf("Digite a área: \n");
     scanf("%f", &area);
 
-    printf("Digite a densidade populacional:");
-    scanf("%f", &densidadePopulacional);
+    printf("Digite o PIB: \n");
+    scanf("%f", &pib);
 
-    int a = pib;
-    float b = populacao;
+    // Poplação / Área.
+    int a = 6211223;
+    float b = 1200329;
     float resultado = a / b;
+
+    printf(" Digite a Densidade Populacional: \n");
+    scanf("%f", &densidadepopulacional);
 
     printf("Resultado: %.3f\n", resultado);
 
-    printf("Ditite o PIB:" );
-    scanf("%f", &pib);
+    // Pib / População.
+    int x = 4909440;
+    int y = 6211223;
+    float quociente = (float) a / b;
 
-    printf("Digite o pib per capita:");
-    scanf("%f", &pibPerCapita); 
+    printf(" Digite o  pib per capita: \n");
+    scanf("%f", &densidadepopulacional);
 
-    printf("Digite número de ponto turístico:");
-    scanf("%d", &numerodePontoTuristico);
- 
+    printf("Resultado: \n");
+    scanf("%.2f", &pibpercapita);
+
+    float numero1 = 6211223;
+    int numero2 = 1200329;
+
+    printf("numero1 > numero2: %d\n", numero1 > numero2);
+    printf("numero1 < numero2: %d\n", numero1 < numero2);
+
     return 0;
 
 }
